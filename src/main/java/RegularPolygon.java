@@ -10,7 +10,7 @@ public class RegularPolygon {
     }
 
     private static Object area (int n, double side) {
-        if (n > 2) {
+        if (n > 2 & side > 0) {
             return (Math.pow(side, 2) * n) / (4 * Math.tan(Math.PI / n));
         } else
             return "NO";
